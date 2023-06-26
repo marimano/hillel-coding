@@ -3,8 +3,6 @@ html {
 }
 
 h1 {
-  color: darkgreen;
-  text-decoration: underline;
   padding: 0 50px;
   font-size: 30px;
 }
@@ -18,4 +16,8 @@ ul {
 li {
   max-width: max-content;
   padding: 0 10px;
+}
+
+.active {
+  text-decoration: underline;
 }
