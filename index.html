@@ -4,33 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Заняття 9</title>
+    <title>Заняття 12</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>План</h1>
     <ul>
       <li>Питання-відповіді</li>
-      <li>Валідація
+      <li>ООП
         <ul>
-          <li>Клієнтська vs серверна</li>
-          <li>Види обробки: помилка, дефолтне значення, перетворення, невалідний результат</li>
-          <li>Де в коді робить валідацію</li>
-          <li>Що перевіряти: тип даних, граничні значення</li>
-          <li>Наскільки прискіпливо перевіряти або що таке "не юзер кейс"</li>
-        </ul>
-      </li>
-      <li>Як "помити" функцію або що таке чисті функції</li>
-      <li>DOM, де живуть елементи сторінки
-        <ul>
-          <li>Що це?</li>
-          <li>Методи для отримання елементів</li>
-          <li>Створення/видалення елементів</li>
-          <li>Управління атрибутами та вмістом елементів</li>
-          <li>Додавання обробників подій</li>
+          <li>Поняття класу, екземпляра, інтерфейсу</li>
+          <li>Функції-конструктори</li>
+          <li>Прототипне успадкування</li>
+          <li>__proto__</li>
+          <li>Object.create()</li>
+          <li>Object.hasOwnProperty()</li>
+          <li>Додавання в прототип</li>
+          <li>Класи у JS: конструктори, методи, гетери, сетери, спадкування</li>
+          <li>Статичні властивості та методи</li>
         </ul>
       </li>
     </ul>
+    <form onsubmit="onFormSubmit(event)">
+      <div class="row">
+        <label for="name">Name:</label>
+        <input id="name" name="name"/>
+      </div>
+      <div class="row">
+        <label for="amount">Amount:</label>
+        <input id="amount" name="amount" type="number" />
+      </div>
+      <div>
+        <button>OK</button>
+        <button type="reset">Reset</button>
+        <span class="error"></span>
+      </div>
+    </form>
+    <ul class="shopping-list"></ul>
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <div class="modal-bg" style="display: none;">
+      <div class="modal-dialog">
+        <div>Confirm deletion</div>
+        <div class="modal-dialog-text">Are you sure?</div>
+        <div>
+          <button class="yes-btn">Yes</button>
+          <button class="no-btn">No</button>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

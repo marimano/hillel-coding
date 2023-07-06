@@ -21,3 +21,120 @@ li {
 .active {
   text-decoration: underline;
 }
+
+.active li {
+  text-decoration: none;
+}
+
+.full-screen {
+  height: 100vh;
+}
+
+.full-screen__1 {
+  background-color: lightblue;
+}
+
+.full-screen__2 {
+  background-color: lightsalmon;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  background-color: white;
+  width: 100px;
+  border: 1px solid grey;
+  margin: 0;
+  padding-left: 0;
+}
+
+.list.open {
+  display: block;
+}
+
+.list li {
+  display: block;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.list li:hover {
+  background-color: aquamarine;
+}
+
+.custom-dd {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  border: 1px solid grey;
+}
+
+.current-element {
+  display: flex;
+  justify-content: stretch;
+  padding: 5px 10px;
+}
+
+.current-element button {
+  background: none;
+  border: none;
+}
+
+.current-element-value {
+  flex-grow: 1;
+}
+
+.third-element {
+  background-color: darkslategray;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: small;
+}
+
+.row {
+  display: flex;
+  padding: 5px;
+}
+
+.row label {
+  display: block;
+  width: 150px;
+}
+
+.row input, .row select, .row textarea {
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.row textarea {
+  resize: none;
+  height: 100px;
+}
+
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffffab;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: aliceblue;
+  font-size: 18px;
+}
+
+.modal-dialog-text {
+  margin: 10px 0;
+}
