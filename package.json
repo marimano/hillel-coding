@@ -1,0 +1,30 @@
+{
+  "name": "hillel-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marimano/hillel-coding.git"
+  },
+  "author": "Maria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marimano/hillel-coding/issues"
+  },
+  "homepage": "https://github.com/marimano/hillel-coding#readme",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/static": "^6.10.2",
+    "fastify": "^4.19.2",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
